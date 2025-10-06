@@ -9,6 +9,8 @@ Improved algorithm - minimised line count for the same output.
 
 Added emoticons for cards so that the playes know which type of card they have, not just what the card is.
 
+Added: cardGUI.py => The GUI of the potential game that shows both the players and opponents decks (totally fair I know)
+
 --- 05.10.2025. ---
 
 A very primitive algorithm where both a player and an opponent recieve a full set of cards and those cards are removed from the big deck.
