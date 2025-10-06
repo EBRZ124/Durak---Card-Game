@@ -1,10 +1,10 @@
 import random
 import numpy as np
 
-diamonds = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
-hearts = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
-spades = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
-clubs = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
+diamonds = ["♦2", "♦3", "♦4", "♦5", "♦6", "♦7", "♦8", "♦9", "♦10", "♦Jack", "♦Queen", "♦King", "♦Ace"]
+hearts = ["♥2", "♥3", "♥4", "♥5", "♥6", "♥7", "♥8", "♥9", "♥10", "♥Jack", "♥Queen", "♥King", "♥Ace"]
+spades = ["♠2", "♠3", "♠4", "♠5", "♠6", "♠7", "♠8", "♠9", "♠10", "♠Jack", "♠Queen", "♠King", "♠Ace"]
+clubs = ["♣2", "♣3", "♣4", "♣5", "♣6", "♣7", "♣8", "♣9", "♣10", "♣Jack", "♣Queen", "♣King", "♣Ace"]
 
 player = []
 opponent = []
@@ -12,57 +12,25 @@ opponent = []
 for i in range (0, 5):
     type = random.randint(0, 3)
     if type == 0:
-        range = len(diamonds)
-        card = random.randint(0, range - 1)
-
-        player.append(diamonds[card])
-        diamonds.pop(card)
-
-        range = len(diamonds)
-        card = random.randint(0, range - 1)
-
-        opponent.append(diamonds[card])
-        diamonds.pop(card)
-
+        type = diamonds
     if type == 1:
-        range = len(hearts)
-        card = random.randint(0, range - 1)
-
-        player.append(hearts[card])
-        hearts.pop(card)
-
-        range = len(hearts)
-        card = random.randint(0, range - 1)
-
-        opponent.append(hearts[card])
-        hearts.pop(card)
-
+        type = hearts
     if type == 2:
-        range = len(spades)
-        card = random.randint(0, range - 1)
-
-        player.append(spades[card])
-        spades.pop(card)
-
-        range = len(spades)
-        card = random.randint(0, range - 1)
-
-        opponent.append(spades[card])
-        spades.pop(card)
-
+        type = spades
     if type == 3:
-        range = len(clubs)
-        card = random.randint(0, range - 1)
+        type = clubs
 
-        player.append(clubs[card])
-        clubs.pop(card)
+    range = len(type)
+    card = random.randint(0, range - 1)
 
-        range = len(clubs)
-        card = random.randint(0, range - 1)
+    player.append(type[card])
+    type.pop(card)
 
-        opponent.append(clubs[card])
-        clubs.pop(card)
+    range = len(type)
+    card = random.randint(0, range - 1)
 
+    opponent.append(type[card])
+    type.pop(card)
 
 print(f"Your deck: {player}")
 print(f"Opponents deck: {opponent}")
