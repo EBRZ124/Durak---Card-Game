@@ -23,4 +23,5 @@ Fix: Previous code made it so that it deletes the selected card in the deck, but
 
 
 _EXTRA_
+
 Why? -> I want to get better at algorithms and I thought a card game would be a good way to practice, as there are 52 card and 4 types. Therefore sorting them to two players seemed challenging enough for me to figure out the proper algorithm and maybe make something out of it.
