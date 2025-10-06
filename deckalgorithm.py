@@ -6,10 +6,12 @@ hearts = ["♥2", "♥3", "♥4", "♥5", "♥6", "♥7", "♥8", "♥9", "♥10
 spades = ["♠2", "♠3", "♠4", "♠5", "♠6", "♠7", "♠8", "♠9", "♠10", "♠Jack", "♠Queen", "♠King", "♠Ace"]
 clubs = ["♣2", "♣3", "♣4", "♣5", "♣6", "♣7", "♣8", "♣9", "♣10", "♣Jack", "♣Queen", "♣King", "♣Ace"]
 
+trump = ["♦", "♥", "♠", "♣"]
+
 player = []
 opponent = []
 
-for i in range (0, 5):
+for i in range (0, 6):
     type = random.randint(0, 3)
     if type == 0:
         type = diamonds
@@ -32,5 +34,13 @@ for i in range (0, 5):
     opponent.append(type[card])
     type.pop(card)
 
-print(f"Your deck: {player}")
-print(f"Opponents deck: {opponent}")
+cards_left = len(diamonds) + len(clubs) + len(spades) + len(hearts)
+print(cards_left)
+
+trump_cards = random.randint(0, 3)
+
+trump_type = trump[trump_cards]
+
+#print(f"Trump cards: {trump_type}")
+#print(f"Your deck: {player}")
+#print(f"Opponents deck: {opponent}")
