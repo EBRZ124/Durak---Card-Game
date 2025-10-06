@@ -20,3 +20,7 @@ Added:
 A very primitive algorithm where both a player and an opponent recieve a full set of cards and those cards are removed from the big deck.
 
 Fix: Previous code made it so that it deletes the selected card in the deck, but it can still be given to a player, though it causes an error; no longer an issue.
+
+
+_EXTRA_
+Why? -> I want to get better at algorithms and I thought a card game would be a good way to practice, as there are 52 card and 4 types. Therefore sorting them to two players seemed challenging enough for me to figure out the proper algorithm and maybe make something out of it.
