@@ -36,10 +36,10 @@ opponent_card4.pack(side="left", padx=10)
 opponent_card5.pack(side="left", padx=10)
 opponent_card6.pack(side="left", padx=10)
 
-bottom_frame = tk.Frame(durak, bg="#E6E6E6")
-bottom_frame.pack(pady=2)
+middle_frame = tk.Frame(durak, bg="#E6E6E6")
+middle_frame.pack(pady=2)
 
-player_label = tk.Label(bottom_frame, text="Your deck", font=("Comfortaa", 14), fg='black', bg='white', relief="groove")
+player_label = tk.Label(middle_frame, text="Your deck", font=("Comfortaa", 14), fg='black', bg='white', relief="groove")
 player_label.pack()
 
 player_card_frame = tk.Frame(durak, bg="#E6E6E6")
@@ -64,5 +64,15 @@ player_card3.pack(side="left", padx=10)
 player_card4.pack(side="left", padx=10)
 player_card5.pack(side="left", padx=10)
 player_card6.pack(side="left", padx=10)
+
+bottom_frame = tk.Frame(durak, bg="#E6E6E6")
+bottom_frame.pack(pady=10)
+cards_left = tk.Label(bottom_frame, text = f"Cards left: {deckalgorithm.cards_left}", 
+                      font=("Comfortaa", 12), fg='black', bg='white', relief="flat")
+cards_left.pack(side="left", padx = 10)
+
+trump_card = tk.Label(bottom_frame, text = f"Trump card type: {deckalgorithm.trump_type}",
+                      font=("Comfortaa", 12), fg='black', bg='white', relief="flat")
+trump_card.pack(side="left", padx = 10)
 
 durak.mainloop()
