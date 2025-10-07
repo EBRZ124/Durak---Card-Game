@@ -3,7 +3,14 @@ Semi - popular card game "Durak" recreation but made digital
 
 Current state updates:
 
---- 06.10.2025. ---
+-- 07.10.2025. --
+
+Changes:
+deckalgorith.py - Deck is remade into a single array for easier algorithm making (not the best way, but doable)
+
+cardGUI.py - Added slots where player and opponent can place a card
+
+-- 06.10.2025. --
 
 Improved algorithm - minimised line count for the same output.
 
@@ -15,7 +22,7 @@ Added:
 3. Shows which of the card types is a "trump" card.
 
 
---- 05.10.2025. ---
+-- 05.10.2025. --
 
 A very primitive algorithm where both a player and an opponent recieve a full set of cards and those cards are removed from the big deck.
 
