@@ -36,6 +36,52 @@ opponent_card4.pack(side="left", padx=10)
 opponent_card5.pack(side="left", padx=10)
 opponent_card6.pack(side="left", padx=10)
 
+opponent_field = tk.Frame(durak, bg="#E6E6E6")
+opponent_field.pack(pady=25)
+
+op_card1 = tk.Label(opponent_field, text=deckalgorithm.opponent_attacks[0], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+op_card2 = tk.Label(opponent_field, text=deckalgorithm.opponent_attacks[1], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+op_card3 = tk.Label(opponent_field, text=deckalgorithm.opponent_attacks[2], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+op_card4 = tk.Label(opponent_field, text=deckalgorithm.opponent_attacks[3], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+op_card5 = tk.Label(opponent_field, text=deckalgorithm.opponent_attacks[4], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+op_card6 = tk.Label(opponent_field, text=deckalgorithm.opponent_attacks[5], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+op_card1.pack(side="left", padx = 10)
+op_card2.pack(side="left", padx = 10)
+op_card3.pack(side="left", padx = 10)
+op_card4.pack(side="left", padx = 10)
+op_card5.pack(side="left", padx = 10)
+op_card6.pack(side="left", padx = 10)
+
+
+player_field = tk.Frame(durak, bg="#E6E6E6")
+player_field.pack(pady=25)
+
+pl_card1 = tk.Label(player_field, text=deckalgorithm.player_attacks[0], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+pl_card2 = tk.Label(player_field, text=deckalgorithm.player_attacks[1], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+pl_card3 = tk.Label(player_field, text=deckalgorithm.player_attacks[2], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+pl_card4 = tk.Label(player_field, text=deckalgorithm.player_attacks[3], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+pl_card5 = tk.Label(player_field, text=deckalgorithm.player_attacks[4], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+pl_card6 = tk.Label(player_field, text=deckalgorithm.player_attacks[5], 
+                    font=("Comfortaa", 10), fg='black', bg='white', relief="raised")
+
+pl_card1.pack(side="left", padx = 10)
+pl_card2.pack(side="left", padx = 10)
+pl_card3.pack(side="left", padx = 10)
+pl_card4.pack(side="left", padx = 10)
+pl_card5.pack(side="left", padx = 10)
+pl_card6.pack(side="left", padx = 10)
+
 middle_frame = tk.Frame(durak, bg="#E6E6E6")
 middle_frame.pack(pady=2)
 
@@ -45,17 +91,19 @@ player_label.pack()
 player_card_frame = tk.Frame(durak, bg="#E6E6E6")
 player_card_frame.pack(pady=15)
 
-player_card1 = tk.Label(player_card_frame, text = deckalgorithm.player[0], 
+
+
+player_card1 = tk.Button(player_card_frame, text = deckalgorithm.player[0], 
                  font=("Comfortaa", 12), fg='black', bg='white', relief="raised")
-player_card2 = tk.Label(player_card_frame, text = deckalgorithm.player[1], 
+player_card2 = tk.Button(player_card_frame, text = deckalgorithm.player[1], 
                  font=("Comfortaa", 12), fg='black', bg='white', relief="raised")
-player_card3 = tk.Label(player_card_frame, text = deckalgorithm.player[2], 
+player_card3 = tk.Button(player_card_frame, text = deckalgorithm.player[2], 
                  font=("Comfortaa", 12), fg='black', bg='white', relief="raised")
-player_card4 = tk.Label(player_card_frame, text = deckalgorithm.player[3], 
+player_card4 = tk.Button(player_card_frame, text = deckalgorithm.player[3], 
                  font=("Comfortaa", 12), fg='black', bg='white', relief="raised")
-player_card5 = tk.Label(player_card_frame, text = deckalgorithm.player[4], 
+player_card5 = tk.Button(player_card_frame, text = deckalgorithm.player[4], 
                  font=("Comfortaa", 12), fg='black', bg='white', relief="raised")
-player_card6 = tk.Label(player_card_frame, text = deckalgorithm.player[5], 
+player_card6 = tk.Button(player_card_frame, text = deckalgorithm.player[5], 
                  font=("Comfortaa", 12), fg='black', bg='white', relief="raised")
 
 player_card1.pack(side="left", padx=10)
