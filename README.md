@@ -6,6 +6,7 @@ Current state updates:
 -- 07.10.2025. --
 
 Changes:
+
 deckalgorith.py - Deck is remade into a single array for easier algorithm making (not the best way, but doable)
 
 cardGUI.py - Added slots where player and opponent can place a card
